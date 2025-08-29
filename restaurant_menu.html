@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #header-img {
+        width: 20%;
+      }
+
+      .menu-img {
+        width: 50%;
+      }
+
+      .menu-name {
+        margin-bottom: -10px;
+      }
+
+      h4 {
+        margin-bottom: 10px;
+      }
+
+      #submit-btn {
+        background: red;
+        padding: 5px;
+        border-radius: 4px;
+        color: white;
+      }
+    </style>
+    <title>Papa Curry</title>
+  </head>
+  <body>
+    <header>
+      <img src="assets/restaurant_2075450.png" id="header-img" />
+      <h1>Papa Curry</h1>
+      <nav>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#order-form">Order</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="menu">
+        <h2>Menu</h2>
+        <article>
+          <img src="https://img.wongnai.com/p/1600x0/2020/02/17/2d4961cbfcb74c2ca5e06a52b20bdf49.jpg" class="menu-img" />
+          <h3 class="menu-name">Fried Pork Curry Rice</h3>
+          <p class="menu-description">The curry broth has a rich aroma of fruits and spices. It is served with hot fried pork. <i>Price 250 baht.</i></p>
+        </article>
+        <hr/>
+        <article>
+          <img src="https://img.wongnai.com/p/1600x0/2017/09/01/935bfb52ba8041eba181445ab447c953.jpg" class="menu-img" />
+          <h3 class="menu-name">Beef curry rice</h3>
+          <p class="menu-description">The curry broth has a rich aroma of fruits and spices. It is served with tender stewed meat. <i>Price 250 baht.</i></p>
+        </article>
+        <hr/>
+        <article>
+          <img src="https://img.wongnai.com/p/1600x0/2018/11/21/0bfcd527cf294aa1a5631e800638c919.jpg" class="menu-img" />
+          <h3 class="menu-name">Fried Eggplant Curry Rice</h3>
+          <p class="menu-description">The curry broth has a rich fruity and spicy aroma, served with crispy fried eggplant on the outside and soft on the inside. <i>Price 250 baht.</i></p>
+        </article>
+        <hr/>
+      </section>
+      <br/>
+      <section id="order-form">
+        <h2>Place Your Order</h2>
+        <form>
+          <label for="pork-curry">Fried Pork Curry Rice</label>
+          <input id="pork-curry" type="number" min="0" max="10" />
+          <br/>
+          <label for="beef-curry">Beef curry rice</label>
+          <input id="beef-curry" type="number" min="0" max="10" />
+          <br/>
+          <label for="eggplant-curry">Fried Eggplant Curry Rice</label>
+          <input id="eggplant-curry" type="number" min="0" max="10" />
+          <br/><hr/>
+
+          <h4>Add-ons</h4>
+          <input id="add-ons-1" type="checkbox" /><label for="add-ons-1">Fried Shrimp</label>
+          <br/>
+          <input id="add-ons-2" type="checkbox" /><label for="add-ons-2">Cheese</label>
+          <br/><hr/>
+
+          <h4>Special requests</h4>
+          <textarea id="request" rows="6" cols="30" placeholder="Enter your special requests such as less spicy, no spoon, etc."></textarea>
+          <br/><br/>
+
+          <input id="submit-btn" type="submit" value="Go To Checkout" />
+        </form>
+      </section>
+      <hr/>
+    </main>
+    <footer>
+      <p>Made with love by @EyeSoDev</p>
+    </footer>
+  </body>
+</html>
